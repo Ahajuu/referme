@@ -8,3 +8,21 @@
   height: 100%;
   background-color: aquamarine;
 }
+ul li{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+.right_con{
+  border-left: solid grey 1px;
+}
+
+@media (max-width:778px) {
+  .right_con{
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
